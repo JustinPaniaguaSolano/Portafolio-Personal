@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+html, body{
+    width: 100%;
+    min-height: 100%;
+}
+
+/* FONDO PRINCIPAL */
+body{
+    background: url("/Assets/Img/img1.jpg") center / cover no-repeat;
+}
+
+/* CONTENEDORES */
+.Container{
+    width: 100%;
+}
+
+/* OVERLAY OSCURO */
+.Shadow{
+    width: 100%;
+    background-color: rgba(0,0,0,0.5);
+}
+
+/* CONTENIDO */
+.SubContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Nav */
+.Nav{
+    width: 100%;
+    min-height: 70px;
+
+}
+nav{
+    background-color: black;
+    width: 100%;
+}
+
+nav ul{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+h1{
+    margin-top: 15px;
+    color: white;
+    text-align: center;
+    margin-left: 25px;
+    font-size: 35px;
+    margin-right: 35px;
+}
+.Bar{
+    margin-top: 15px;
+    margin-left: 15px;
+    text-decoration: none;
+    background-color: rgb(0, 0, 0);
+    font-size: 35px;
+    list-style:none;
+    text-decoration: none;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    border :1px solid white;
+}
+a{
+    list-style:none;
+    text-decoration: none;
+    color: white;
+}
+.Content{
+    width: 100%;
+    height: 100%;
+}
+.ti{
+    text-align: left;
+    margin-left: 125px;
+}
+.InformacionP{
+    border: 1px solid black;
+    border-radius: 25px;
+    text-align: left;
+    justify-content: left;
+    margin-inline-start: 50px;
+    width: 350px;
+    background-color: rgb(255, 228, 196, 0.2);
+}
+.Ul_info{
+    margin-left: 15px;
+    text-decoration: none;
+    list-style: none;
+}
+li{
+    color: white;
+    font-size: 20px;
+}
+.Ul_inf1{
+    color: rgb(188, 171, 171);
+    margin-left: 60px;
+    font-size: 18px;
+}
+.Resumen{
+    height: 100%;
+    border: 1px solid black;
+    margin-top: 25px;
+}
+.h2_Re{
+    color: white;
+    margin-top: 5px;
+    text-align: center;
+    justify-content:center;
+    font-size: 35px;
+}
+#p1{
+    color: white;
+    font-size: 25px;
+    margin-bottom: 25px;
+    margin: 15px;
+}
+#p2{
+     color: rgb(241, 235, 235);
+    font-size: 25px;
+    margin-bottom: 15px;
+    margin: 15px;
+}
