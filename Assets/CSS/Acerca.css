@@ -1,352 +1,246 @@
-*{
-    margin: 0;
-    padding: 0;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: white;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: white;
 }
 
-ul{
-    margin: 0;
-    padding: 0;
-    list-style: none;
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
-html, body{
-    width: 100%;
-    min-height: 100%;
+html,
+body {
+  width: 100%;
+  min-height: 100%;
 }
 
 /* FONDO PRINCIPAL */
-body{
-    background: url("/Assets/Img/img1.jpg") center / cover no-repeat;
+body {
+  background: url("/Assets/Img/img1.jpg") center / cover no-repeat;
 }
 
 /* CONTENEDORES */
-.Container{
-    width: 100%;
+.Container {
+  width: 100%;
 }
 
 /* OVERLAY OSCURO */
-.Shadow{
-    width: 100%;
-    background-color: rgba(0,0,0,0.5);
+.Shadow {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  overflow-y: auto;
 }
 
+
+
 /* CONTENIDO */
-.SubContainer{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.SubContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* Nav */
-.Nav{
-    width: 100%;
-    min-height: 70px;
-
+.Nav {
+  width: 100%;
+  min-height: 110px;
+  position: relative;
+  z-index: 10;
 }
-nav{
-    background-color: black;
-    width: 100%;
-}
-nav ul{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-h1{
-    margin-top: 15px;
-    color: white;
-    text-align: center;
-    margin-left: 25px;
-    font-size: 35px;
-    margin-right: 35px;
-}
-.Bar{
-    margin-top: 15px;
-    margin-left: 15px;
-    text-decoration: none;
-    background-color: rgb(0, 0, 0);
-    font-size: 35px;
-    list-style:none;
-    text-decoration: none;
-    border-radius: 10px;
-    margin-bottom: 5px;
-    border :1px solid white;
-}
-a{
-    list-style:none;
-    text-decoration: none;
-    color: white;
-}
-.Content{
-    width: 100%;
-    height: 100%;
-}
-.ti{
-    text-align: left;
-    margin-left: 125px;
-    text-shadow: 6px 5px 5px black;
-
-}
-.InformacionP{
-    border: 1px solid black;
-    border-radius: 25px;
-    text-align: left;
-    justify-content: left;
-    margin-inline-start: 50px;
-    width: 350px;
-    background-color: rgb(255, 228, 196, 0.2);
-}
-.Ul_info{
-    margin-left: 15px;
-    text-decoration: none;
-    list-style: none;
-}
-li{
-    color: white;
-    font-size: 20px;
-}
-.Ul_inf1{
-    color: rgb(188, 171, 171);
-    margin-left: 60px;
-    font-size: 18px;
-}
-.Resumen{
-    height: 100%;
-    border: 2px solid rgba(255, 255, 255, 0.276);
-    margin-top: 25px;
-    background-color: rgba(243, 243, 229, 0.115);
-}
-.h2_Re{
-    color: white;
-    margin-top: 5px;
-    text-align: center;
-    justify-content:center;
-    font-size: 35px;
-    text-shadow: 6px 5px 5px black;
-}
-#p1{
-    color: white;
-    font-size: 25px;
-    margin-bottom: 25px;
-    margin: 15px;
-    text-shadow: 3px 3px 3px black;
-
-}
-#p2{
-     color: rgb(255, 255, 255);
-    font-size: 25px;
-    margin-bottom: 15px;
-    margin: 15px;
-    text-shadow: 3px 3px 3px black;
-
-}
-#h2Form{
-    width: 100%;
-    margin-top:45px;
-    text-align: center;
-    color: white;
-    font-size: 45px;
-    text-shadow: 6px 5px 5px black;
+.Nav .nav-link,
+.Nav .navbar-brand,
+.active {
+  color: rgb(255, 255, 255);
 }
 
-.Formaciones{
-    width: 100%;
-    height: 100%;
-    border:4px solid rgb(255, 255, 255);
-    display: flex;
-    flex-direction: row;
-    background-color: rgba(113, 110, 110, 0.164);
-    border-radius: 15px;
+.Nav .nav-link:hover {
+  color: #0d6efd;
+}
+.navbar .nav-link {
+  display: flex;
+  align-items: center;
+  gap: 6px;
 }
 
-.FormacionA,.FormacionCom{
-    width: 50%;
-    border: 1px solid rgb(255, 255, 255);
-    display: flex;
-    flex-direction: column;
-    border:none;
- 
+.navbar .nav-link i,
+.navbar .nav-link span {
+  color: inherit;
+}
+/* end NAV */
+
+/* Start General configuracion Acordeon */
+.accordion {
+  max-width: 900px;
+  margin: auto;
+}
+.accordion-header {
+  background-color: rgb(104, 92, 92);
+}
+.accordion-item {
+  background-color: rgb(104, 92, 92);
+}
+.accordion-button,
+.accordion-body {
+  color: #ffffff !important;
+  background-color: rgba(95, 93, 93, 0.574) !important;
+}
+h6,
+span {
+  color: rgb(255, 255, 255);
+}
+/* End General Configuracion Acordeon */
+
+/* Start Acordeon Resumen Profesional */
+.profile-summary {
+  max-width: 900px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
-#h2_FA{
-    color: white;
-    margin-top: 15px;
-    text-align: center;
-    font-size: 35px;
-    text-shadow: 3px 3px 3px black;
+.profile-summary p {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  background: rgba(255, 255, 255, 0.08);
+  padding: 15px 18px;
+  border-radius: 12px;
+  line-height: 1.6;
+  color: rgb(255, 255, 255);
 }
 
-#Title_Form{
-    color: white;
-    margin-left: 10px;
-    display: flex;
-    font-size: 20px;
-    text-shadow: 5px 5px 5px black;
-    margin-top: 15px;
+.profile-summary i {
+  color: #0dbc28;
+  font-size: 1.2rem;
+  margin-top: 3px;
+}
+/* End Acordeon Resumen Profesional */
+
+/*Acordeon Formacion academica */
+.education-timeline {
+  max-width: 900px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
-#Sub_form{
-    width: 100%;
-    text-shadow: 3px 2px 3px black;
-    font-size: 20px;
-    font-weight: lighter;
-    text-align: right;
-    margin-right: 15px;
-    margin-top: 15px;
+.edu-item {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  background: rgba(255, 255, 255, 0.08);
+  padding: 15px 20px;
+  border-radius: 12px;
+  transition: background 0.2s ease;
 }
 
-#Ter_form{
-    text-align: center;
-    color: white;
-    font-size: 25px;
-    margin-top: 5px;
-    text-shadow: 5px 5px 5px black;
+.edu-item:hover {
+  background: rgba(255, 255, 255, 0.15);
 }
 
-#p_form{
-    color: white;
-    margin-bottom: 55px;
-    margin-left: 5px;
-    margin-right: 5px;
-    font-size: 20px;
-    justify-content: stretch;
-    text-shadow: 2px 3px 2px black;
+.edu-year {
+  font-weight: 600;
+  color: #0dbc28;
+  min-width: 120px;
 }
-.Skills{
-    margin-top: 3%;
-    width: 50%;
-    height: 100%;
-    border: 2px solid rgb(255, 255, 255);
-    background-color: rgba(208, 202, 195, 0.219);
-    align-items: center;
-}
-h4{
-    margin-top: 3%;
-    font-size: 45px;
-    margin-left: 3%;
-}
-#ul_Skills{
-    margin-left: 5%;
-    text-shadow: 3px 5px 3px black ;
 
+.edu-content h6 {
+  margin: 0;
+  font-weight: 600;
 }
-#li_skills{
-    text-shadow: 3px 3px 3px black ;
-    font-size: 25px;
-    font-weight: bold;
+
+.edu-content p {
+  margin: 0;
+  font-size: 0.9rem;
+  opacity: 0.85;
 }
-#ul_len{
-    font-weight: lighter;
-    margin: 1%;
-     margin-left: 5%;
+/* End Acordeon Formacion Academica */
+
+/* Acordeon Certificaciones */
+.cert-card {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.08);
+  padding: 15px 20px;
+  border-radius: 12px;
+  transition: transform 0.2s ease, background 0.2s ease;
 }
-#Btt_Pro{
-    margin-top: 5%;
-    padding: 3%;
-    width: 35%;
-    margin-bottom: 5%;
-    background: rgba(50, 132, 63, 0.443);
-    border-radius: 15px;
-    border: 3px solid black;
+
+.cert-card i {
+  font-size: 1.8rem;
+  color: #0dbc28;
+  min-width: 35px;
 }
-#bt_proy{
-    font-size: 25px;
-    font-weight: bold;
+
+/* Acordeon Habilidades */
+.skills-container {
+  max-width: 900px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
 }
-/* Animacions */
-.Bar:hover{
-    background-color: rgb(57, 57, 57);
-    animation: alternate;
-    transition-duration: 0.2s;
-    font-size: 40px;
-    margin: 0;
-    margin-top: 5px;
-    margin-left: 15px;
-    margin-right: 15px;
-    color: brown;
-    border: 5px solid rgb(95, 130, 12);
+
+.skills-section h6 {
+  margin-bottom: 15px;
+  font-weight: 600;
 }
-.Nav_A:hover{
-        color: rgb(28, 158, 31);
+
+.skill {
+  margin-bottom: 12px;
 }
-h1:hover{
-        color: red;
-        transition-duration: 0.2s;
-        transition: linear;
-        font-size: 40px;
-        margin-bottom: 25px;
-        margin-top: 5px;
+
+.skill span {
+  font-size: 0.9rem;
 }
-.InformacionP:hover{
-     animation: alternate;
-    transition-duration: 0.2s;
-    font-size: 45px;
-    .Ul_inf1:hover{
-         animation: alternate;
-    transition-duration: 0.2s;
-          font-size: 25px;
-          margin-left: 5%;
-    }
+
+.progress {
+  height: 16px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  overflow: hidden;
 }
-.h2_Re:hover{
-     animation: alternate;
-    transition-duration: 0.2s;
-    font-size: 65px;
-    #p1:hover,#p2:hover{
-        font-size: 105px;
-    }
+
+.progress-bar {
+  background-color: #0d6efd;
+  border-radius: 10px;
 }
-#p1:hover,#p2:hover{
-     animation: alternate;
-    transition-duration: 0.4s;
-        font-size: 35px;
-    }
-#h2Form:hover{
-     animation: alternate;
-    transition-duration: 0.2s;
-    font-size: 55px;
+
+.soft-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
 }
-.FormacionA:hover{
-     animation: alternate;
-    transition-duration: 0.2s;
-    font-size: 45px;
+
+.soft-skills .badge {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 8px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  color: #ffffff;
 }
-#Title_Form:hover,#Sub_form:hover{
-     animation: alternate;
-    transition-duration: 0.2s;
-    font-size: 25px;
+.btn-success {
+  height: 100%;
+  background-color: #0dbc28;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  cursor: pointer;  
 }
-#p_form:hover,#Ter_form:hover{
-     animation: alternate;
-    transition-duration: 0.5s;
-    font-size: 35px;
+.accordion-button i {
+    color: #0d6efd;
 }
-h4:hover{
-     animation: alternate;
-    transition-duration: 0.5s;
-    font-size: 55px;
-}
-#ul_Skills:hover{
-     animation: alternate;
-    transition-duration: 0.5s;
-    font-size:  45px;
-    #li_skills{
-         animation: alternate;
-    transition-duration: 0.5s;
-        font-size: 35px;
-    }
-}
-#Btt_Pro:hover{
-     animation: alternate;
-    transition-duration: 0.5s;
-    background: rgba(50, 132, 64, 0.832);
-    cursor: pointer;
-    border: 7px solid black;
-    #bt_proy{
-        color: rgb(179, 255, 0);
-    }
-}
+
+
