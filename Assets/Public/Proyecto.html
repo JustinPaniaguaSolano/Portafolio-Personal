@@ -5,7 +5,18 @@
     <title>Proyectos</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Link Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+
+    <!-- Link Normalize -->
+    <link rel="stylesheet" href="normalize.css">
+    <!-- Link CSS -->
     <link href="../CSS/Proyecto.css" rel="stylesheet">
+    <!-- Link FontAwesome -->
+    <script src="https://kit.fontawesome.com/5a570e4f0a.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
@@ -14,78 +25,206 @@
             <div class="SubContainer">
                 <!-- Start Nav -->
                 <div class="Nav">
-                    <nav>
-                        <ul>
-                            <li class="Logo">
-                                <h1>PORTAFOLIO</h1>
-                            </li>
-                            <li class="Bar"><a class="Nav_A" href="Index.html">Inicio</a></li>
-                            <li class="Bar"><a class="Nav_A" href="Acerca.html">Acerca</a></li>
-                            <li class="Bar"><a class="Nav_A" href="#">Proyectos</a></li>
-                            <li class="Bar"><a class="Nav_A" href="Contacto.html">Contacto</a></li>
-                        </ul>
+                    <nav class="navbar navbar-expand-lg bg-dark border-bottom border-body" data-bs-theme="dark">
+                        <div class="container-fluid">
+                            <a class="navbar-brand" href="#">Portafolio</a>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                                <div class="navbar-nav">
+                                    <a class="nav-link active" href="#">
+                                        <i class="fa-regular fa-house"></i>
+                                        <span>Inicio</span>
+                                    </a>
+                                    <a class="nav-link" href="Acerca.html">
+                                        <i class="fa-regular fa-user"></i>
+                                        <span>Acerca de</span>
+                                    </a>
+
+                                    <a class="nav-link" href="Proyecto.html">
+                                        <i class="fa-regular fa-folder"></i>
+                                        <span>Proyectos</span>
+                                    </a>
+
+                                    <a class="nav-link" href="Contacto.html">
+                                        <i class="fa-regular fa-envelope"></i>
+                                        <span>Contacto</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     </nav>
                 </div>
                 <!--End Nav  -->
+
                 <!-- Start Content -->
                 <div class="Content">
-                    <h1>Proyectos</h1>
+                    <!-- Start Acordeon -->
+                    <h1>Aqui podes encontrar los proyectos en los que he trabajado</h1>
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <!-- Start Item Portafolio -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                    aria-controls="flush-collapseOne">
+                                    Porfalio Web Personal
+                                </button>
+                            </h2>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
 
-                    <div class="Proyecto">
-                        <div>
-                            <div class="Tit">
-                                <h2 class="Title">Sistema Control de Cuentas</h2>
-                                <h3 class="Sub_title">Proyecto Personal (2025)</h3>
-                                <h3 class="Tech">Desarrollada en C# y SQL Server</h3>
+                                    Este portafolio web personal fue desarrollado utilizando HTML, CSS y Bootstrap
+                                    para crear una interfaz atractiva y responsiva. El objetivo principal de este
+                                    proyecto es mostrar mis habilidades, experiencia y proyectos de una manera
+                                    profesional y accesible. He implementado un diseño limpio y moderno, asegurando
+                                    que la navegación sea intuitiva para los visitantes. Además, he optimizado el
+                                    sitio para diferentes dispositivos, garantizando una experiencia de usuario
+                                    consistente tanto en computadoras de escritorio como en dispositivos móviles.
+                                    <div class="Tecnologias">
+                                        <h3>Tecnologias:</h3>
+                                        <i class="fa-brands fa-html5"></i>
+                                        <i class="fa-brands fa-css"></i>
+                                        <i class="fa-brands fa-bootstrap"></i>
+                                    </div>
+                                </div>
                             </div>
-                            <p class="Descripcion">App en C# + SQL Server para gestión de cuentas.
-                                Validaciones, consultas, mantenimiento y lógica de negocio.
-                            </p>
-                            <hr>
-
-                            <div class="Tit">
-                                <h2 class="Title">Programación Avanzada</h2>
-                                <h3 class="Sub_title">Proyecto U (2025)</h3>
-                                <h3 class="Tech">Desarrollada en C# y SQL Server</h3>
-                            </div>
-                            <p class="Descripcion">Subprocesamiento múltiple y gestión de bases de datos con
-                                ADO.NET.
-                                Uso de colecciones y programación en red.
-                                Programación en red y colecciones.
-                            </p>
-                            <hr>
-                            <div class="Tit">
-                                <h2 class="Title">Programación Intermedia </h2>
-                                <h3 class="Sub_title">Proyecto U (2024)</h3>
-                                <h3 class="Tech">Desarrollado en :Java</h3>
-                            </div>
-                            <p class="Descripcion">Uso de ArrayList, POO, herencia e interfaces.
-                                Diseño de interfaces gráficas y manejo de archivos.
-                            </p>
-                            <hr>
-
-                            <div class="Tit">
-                                <h2 class="Title">Introducción a la Programación </h2>
-                                <h3 class="Sub_title">Proyecto U (2023)</h3>
-                                <h3 class="Tech">C++</h3>
-                            </div>
-                            <p class="Descripcion"> Aplicación de conceptos básicos de programación.
-                                Manejo de cadenas, estructuras de control, recursividad, punteros y archivos
-                            </p>
-                            <hr>
                         </div>
+                        <!-- End Item Portafolio -->
+
+                        <!-- Start Item Sistema control de cuentas -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                    aria-controls="flush-collapseTwo">
+                                    Sistema de Control de Cuentas Personales
+                                </button>
+                            </h2>
+                            <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    Aplicación de escritorio desarrollada en C# y SQL Server para la administración de
+                                    finanzas personales. El sistema está estructurado en módulos como Ajustes, Personas,
+                                    Cuentas, Cuentas por Cobrar y Servicios, permitiendo registrar, consultar y
+                                    gestionar información financiera de forma organizada. Incluye funcionalidades como
+                                    la creación y mantenimiento de cuentas, registro de transacciones, ingreso y
+                                    consulta de pagos de servicios y seguimiento de movimientos financieros. La interfaz
+                                    fue diseñada en Windows Forms, priorizando la usabilidad y una experiencia
+                                    intuitiva, e incorpora medidas de seguridad para la protección de la información del
+                                    usuario.
+                                    <div class="Tecnologias">
+                                        <h3>Tecnologias:</h3>
+                                        <i class="fa-solid fa-c"></i>
+                                        <i class="fa-solid fa-database"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Item Sistema control de cuentas -->
+                        <!-- Start Item Programacion Avanzada -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                    aria-controls="flush-collapseThree">
+                                    Programacion Avanzada
+                                </button>
+                            </h2>
+                            <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    Proyecto desarrollado en C# y SQL Server orientado a la gestión de entregas para una
+                                    empresa, que permite registrar y consultar información clave como tipos de
+                                    artículos, artículos, clientes, repartidores y pedidos. Durante el desarrollo se
+                                    aplicaron conceptos de interfaces gráficas, manejo de excepciones, bases de datos,
+                                    colecciones, subprocesamiento múltiple y programación en red, fortaleciendo la
+                                    integración entre la lógica de negocio, la persistencia de datos y la experiencia de
+                                    usuario.
+                                    <div class="Tecnologias">
+                                        <h3>Tecnologias:</h3>
+                                        <i class="fa-solid fa-c"></i>
+                                        <i class="fa-solid fa-database"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Item Programacion Avanzada -->
+                            <!-- Start Item Programacion Intermedia -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseFour" aria-expanded="false"
+                                        aria-controls="flush-collapseFour">
+                                        Programacion Intermedia
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseFour" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        Proyecto desarrollado en Java con el objetivo de crear una aplicación para la
+                                        gestión del inventario de repuestos de vehículos de la empresa AutopartesCR,
+                                        cumpliendo con estándares de calidad y buenas prácticas de programación. El
+                                        sistema permite registrar y administrar repuestos mediante una estructura
+                                        orientada a objetos, utilizando la clase Repuesto para manejar información como
+                                        nombre, marca, categoría y precios. Además, se implementó la clase
+                                        CalculadoraImpuestos para el cálculo automático de impuestos y precios finales,
+                                        evitando la entrada manual de datos.
+                                        El proyecto fue utilizado para aplicar y reforzar conceptos de programación
+                                        orientada a objetos, validaciones, encapsulamiento, manejo de clases, y
+                                        automatización de procesos, asegurando una gestión eficiente y organizada del
+                                        inventario.
+
+                                        <div class="Tecnologias">
+                                            <h3>Tecnologias:</h3>
+                                            <i class="fa-brands fa-java"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Item Programacion Intermedia -->
+                            <!-- Start Item Introduccion a la Programacion -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseFive" aria-expanded="false"
+                                        aria-controls="flush-collapseFive">
+                                        Introduccion a la Programacion
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseFive" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">Aplicación de consola desarrollada en C++ orientada al
+                                        cálculo del Índice de Masa Corporal (IMC) y a la gestión básica de recetas y
+                                        medicamentos, utilizando archivos de texto para el almacenamiento de la
+                                        información. El proyecto permitió aplicar estructuras de control, manejo de
+                                        archivos, validaciones, lógica de negocio y presentación ordenada de datos,
+                                        simulando escenarios reales del área de la salud.
+                                        <div class="Tecnologias">
+                                            <h3>Tecnologias:</h3>
+                                            <i class="fa-solid fa-c"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Item Introduccion a la Programacion -->
+                        </div>
+                        <!-- End Acordeon -->
+                         <br><br>
+                        <!-- Boton -->
+                        <button type="button" class="btn btn-success"><a class="btn" href="Contacto.html">Ir a
+                                Conctacto</a>
+                        </button>
                     </div>
+                    <!-- End Content -->
                 </div>
             </div>
         </div>
-        <div class="Botones">
-            <button id="Btt_Anterior"><a class="A" href="Acerca.html">Anterior</a></button>
-            <button id="Btt_Contacto"><a class="A" href="Contacto.html">Ir a Contacto</a></button>
-        </div>
-    </div>
-
-    </div>
-    </div>
+        <!-- Link Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 
