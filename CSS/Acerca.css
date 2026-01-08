@@ -20,7 +20,7 @@ body {
 
 /* FONDO PRINCIPAL */
 body{
- background-image:url("/Img/img1.jpg");
+ background-image:url("../Img/img1.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
