@@ -36,6 +36,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+   gap: 20px;
 }
 /* Nav */
 .Nav {
@@ -81,7 +82,7 @@ h2 {
 .QuickMenu {
   margin-top: 5%;
   width: 50%;
-  height: 60%;
+  height: auto;
   background-color: rgba(0, 0, 0, 0.563);
   padding: 15px;
 }
@@ -115,3 +116,23 @@ h3.SubTitle {
 .list-group-item span {
   color: inherit;
 }
+@media (max-width: 768px) {
+  .title {
+    margin-top: 20px;
+    height: auto;
+  }
+
+  .QuickMenu {
+    width: 90%;
+    margin-top: 20px;
+  }
+
+  h2 {
+    font-size: 26px;
+  }
+
+  h3.SubTitle {
+    font-size: 22px;
+  }
+}
+

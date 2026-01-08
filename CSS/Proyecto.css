@@ -14,12 +14,11 @@ html,
 body {
   height: 100%;
 }
-body{
- background-image:url("../Img/img1.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
+body {
+  background-image: url("../Img/img1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /* Principal Containers */
@@ -27,10 +26,10 @@ body{
   min-height: 100vh;
 }
 .Shadow {
-  background-color: rgb(0, 0, 0, 0.5);
-  min-height: 100vh;
   position: fixed;
   inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  overflow-y: auto;
 }
 .SubContainer {
   min-height: 100vh;
@@ -39,31 +38,30 @@ body{
   align-items: center;
 }
 /* Nav */
-.Nav{
-    width: 100%;
-    min-height: 110px;
-      position: relative;
-    z-index: 10;
-
+.Nav {
+  width: 100%;
+  min-height: 110px;
+  position: relative;
+  z-index: 10;
 }
 .Nav .nav-link,
 .Nav .navbar-brand,
 .active {
-    color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
 }
 
 .Nav .nav-link:hover {
-    color: #0d6efd;
+  color: #0d6efd;
 }
 .navbar .nav-link {
-    display: flex;
-    align-items: center;
-    gap: 6px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
 }
 
 .navbar .nav-link i,
 .navbar .nav-link span {
-    color: inherit;
+  color: inherit;
 }
 /* End Nav */
 
@@ -98,19 +96,19 @@ h1 {
   text-align: center;
   margin: 25px 0px;
 }
-.Tecnologias{
-    display: flex;
-    justify-content: right;
-    gap: 15px;
-    flex-wrap: wrap;
-    margin-top: 20px;
+.Tecnologias {
+  display: flex;
+  justify-content: right;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-top: 20px;
 }
-.Tecnologias h3{
-    text-align: center;
-    margin-bottom: 10px;
+.Tecnologias h3 {
+  text-align: center;
+  margin-bottom: 10px;
 }
-.Tecnologias i{
-    font-size: 30px;
+.Tecnologias i {
+  font-size: 30px;
 }
 /* Boton */
 .btn-success {
@@ -123,5 +121,5 @@ h1 {
   text-decoration: none;
   color: white;
   text-align: center;
-  cursor: pointer;  
+  cursor: pointer;
 }
