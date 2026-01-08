@@ -19,8 +19,12 @@ body {
 }
 
 /* FONDO PRINCIPAL */
-body {
-  background: url("/Assets/Img/img1.jpg") center / cover no-repeat;
+body{
+ background-image:url("/Img/img1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
 
 /* CONTENEDORES */
